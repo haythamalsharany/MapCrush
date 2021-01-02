@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPlacefragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:paddingTop="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/Category_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+             />
+
+        <EditText
+            android:id="@+id/place_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
+            android:hint="اسم لموقع"
+            />
+
+        <EditText
+            android:id="@+id/place_address"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:hint="عنوان الموقع"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
+             />
+
+        <EditText
+            android:id="@+id/place_Lat"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:hint="دائرة العرض"
+
+            android:textSize="8dp" />
+
+
+        <EditText
+            android:id="@+id/plac_Lang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:inputType="numberDecimal"
+            android:hint="خط الطول"
+
+          >
+
+        </EditText>
+
+
+
+
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:clickable="true"
+      
+
+        android:src="@color/colorAccent"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+</FrameLayout>
